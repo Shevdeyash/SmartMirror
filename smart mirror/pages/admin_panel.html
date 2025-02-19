@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="admin_panel.html">Admin</a></li>
+                <li><a href="display_mode.html">Display</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="admin-section">
+        <div class="admin-container">
+            <h2>Upload Digital Signage Content</h2>
+
+            <form id="upload-form">
+                <label for="text">Text Content:</label>
+                <textarea id="text" placeholder="Enter display text..."></textarea>
+
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" accept="image/png, image/jpeg">
+
+                <label for="video">Upload Video:</label>
+                <input type="file" id="video" accept="video/mp4, video/avi">
+
+                <label for="display-time">Set Display Time (Seconds):</label>
+                <input type="number" id="display-time" min="5" max="60" value="10">
+
+                <button type="submit">Publish</button>
+                <button type="button" id="delete-content">Delete</button>
+            </form>
+
+            <div class="preview">
+                <h3>Preview Window</h3>
+                <div id="preview-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>All rights reserved ©2025 SLRTCE EXTC</p>
+    </footer>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>

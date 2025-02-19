@@ -1,0 +1,297 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Horizontal Navbar Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;  /* Make the navbar horizontal */
+    justify-content: center; /* Center items horizontally */
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: cyan;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Info Panel */
+.info-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111;
+    color: white;
+}
+
+/* Team Member Cards */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid cyan;
+}
+
+/* Contact Us Section */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Contact Container (Splits Section into Two Parts) */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Side: Contact Details */
+.contact-details {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.contact-details h3 {
+    color: cyan;
+}
+
+.contact-details a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Right Side: Feedback Form */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    background-color: cyan;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+}
+/* Login Section */
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    color: cyan;
+    margin-bottom: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#login-form button {
+    background-color: cyan;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#login-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

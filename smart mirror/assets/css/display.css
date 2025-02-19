@@ -1,0 +1,42 @@
+/* Display Mode Styling */
+body {
+    background: black;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#display-container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    padding: 20px;
+}
+
+#display-content {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+#display-content img, #display-content video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Fullscreen Mode */
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
